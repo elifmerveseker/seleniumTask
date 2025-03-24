@@ -6,9 +6,9 @@ from pages.qa_career_page import QaCareerPage
 from tests.base_test import BaseTest
 
 
-class AdvancedAutomationPath(BaseTest):
+class InsiderTask(BaseTest):
 
-    def test_check_advanced_automation_path(self):
+    def test_check_insider_task(self):
         home_page = HomePage(self.driver)
         home_page.go_to_url(home_page.website_url)
         self.assertEqual(home_page.website_url, home_page.get_current_url(), 'You are not on Insider homepage.')
